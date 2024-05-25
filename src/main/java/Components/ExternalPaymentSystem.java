@@ -1,8 +1,9 @@
 package Components;
 
+import org.springframework.stereotype.Component;
 
 @Component
-public class ExternalPa  ymentSystem {
+public class ExternalPaymentSystem {
     public void pay(double amount) {
         System.out.println("Платеж осуществлен: " + amount);
     }

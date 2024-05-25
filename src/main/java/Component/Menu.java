@@ -1,4 +1,4 @@
-package Components;
+package Component;
 
 import java.util.Scanner;
 
@@ -27,16 +27,15 @@ public class Menu {
                     while(true){
                         if(!plaki.isAlive()){
                             hehe.interrupt();
-                            call.terminateCall(phone);
-                            System.out.println("Ваш друг бросил трубку(");
+                            scan.reset();
                             break;
                         }
                         if(!hehe.isAlive()){
-                            call.terminateCall(phone);
                             plaki.interni();
                             break;
                         }
                     }
+                    call.terminateCall(phone);
                     subject.setState("Ожидание");
                     break;
                 case 2:

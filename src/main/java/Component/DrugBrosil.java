@@ -1,4 +1,4 @@
-package Components;
+package Component;
 import java.time.Duration;
 
 public class DrugBrosil extends Thread {
@@ -22,6 +22,10 @@ public class DrugBrosil extends Thread {
             // if(isInterrupted()) {
             //     break;
             // }
+        }
+
+        if(!isInterrupted()){
+            System.out.println("Ваш друг бросил трубку((");
         }
     }
 }
